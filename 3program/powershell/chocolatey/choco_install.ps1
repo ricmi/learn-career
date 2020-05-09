@@ -238,7 +238,7 @@ if ($useWindowsCompression -ne $null -and $useWindowsCompression -eq 'true') {
 elseif (-Not (Test-Path ($7zaExe))) {
     Write-Output "Downloading 7-Zip commandline tool prior to extraction."
     # download 7zip
-    Download-File 'http://ss-choco.1hai.cn/packages/7za.exe' "$7zaExe"
+    Download-File 'http://ss-choco.1hai.cn/tools/7za.exe' "$7zaExe"
 }
 
 $unzipMethod = 'builtin'
