@@ -241,7 +241,7 @@ elseif (-Not (Test-Path ($7zaExe))) {
     Download-File 'http://ss-choco.1hai.cn/tools/7za.exe' "$7zaExe"
 }
 
-$unzipMethod = 'builtin'
+# $unzipMethod = 'builtin'
 # unzip the package
 Write-Output "Extracting $file to $tempDir..."
 if ($unzipMethod -eq '7zip') {
